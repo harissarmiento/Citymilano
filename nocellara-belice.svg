@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Nocellara del Belice olives</title>
+  <desc id="desc">Premium realistic olive fruit photography-inspired illustration for Nocellara del Belice.</desc>
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="20%" r="85%">
+      <stop offset="0%" stop-color="#22261d"/>
+      <stop offset="100%" stop-color="#121610"/>
+    </radialGradient>
+    <radialGradient id="olive3A" cx="30%" cy="22%" r="80%">
+      <stop offset="0%" stop-color="#dfeea6"/>
+      <stop offset="18%" stop-color="#c2d97b"/>
+      <stop offset="58%" stop-color="#7b9552"/>
+      <stop offset="100%" stop-color="#243522"/>
+    </radialGradient>
+    <radialGradient id="olive3B" cx="35%" cy="25%" r="85%">
+      <stop offset="0%" stop-color="#dfe79b"/>
+      <stop offset="18%" stop-color="#bdd26f"/>
+      <stop offset="58%" stop-color="#6e8a4a"/>
+      <stop offset="100%" stop-color="#243225"/>
+    </radialGradient>
+    <filter id="shadow3" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="420" fill="url(#bg3)"/>
+  <circle cx="492" cy="92" r="84" fill="#d9b56b" opacity="0.10"/>
+
+  <g filter="url(#shadow3)">
+    <g transform="translate(66 110) rotate(-10 130 90)">
+      <ellipse cx="130" cy="90" rx="66" ry="50" fill="url(#olive3A)"/>
+      <ellipse cx="146" cy="76" rx="50" ry="33" fill="#dfe9a4" opacity="0.40"/>
+      <ellipse cx="154" cy="79" rx="20" ry="13" fill="#f9f9d9" opacity="0.28"/>
+      <path d="M112 113 C 126 132, 129 144, 134 165" stroke="#697b53" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M162 86 C 180 101, 191 119, 198 139" stroke="#5b7c4a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M109 84 C 92 76, 75 66, 56 41" stroke="#47653b" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M166 68 C 184 56, 202 47, 228 28" stroke="#496b40" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="228" cy="26" rx="11" ry="18" fill="#7e9d5d" transform="rotate(-28 228 26)"/>
+      <ellipse cx="57" cy="41" rx="11" ry="18" fill="#75935d" transform="rotate(18 57 41)"/>
+    </g>
+
+    <g transform="translate(230 176) rotate(10 120 70)">
+      <ellipse cx="120" cy="70" rx="64" ry="48" fill="url(#olive3B)"/>
+      <ellipse cx="136" cy="59" rx="48" ry="32" fill="#d1df8a" opacity="0.40"/>
+      <ellipse cx="145" cy="63" rx="20" ry="13" fill="#f7f7d3" opacity="0.27"/>
+      <path d="M96 90 C 110 108, 118 120, 125 140" stroke="#6a7d53" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M149 76 C 165 90, 174 107, 181 128" stroke="#59744d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M96 66 C 79 58, 63 48, 47 25" stroke="#48693f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M150 52 C 170 40, 186 31, 206 18" stroke="#496b3e" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="206" cy="16" rx="11" ry="18" fill="#7f9f60" transform="rotate(-24 206 16)"/>
+      <ellipse cx="46" cy="24" rx="10" ry="17" fill="#74915a" transform="rotate(15 46 24)"/>
+    </g>
+
+    <g transform="translate(350 95) rotate(-9 95 78)">
+      <ellipse cx="95" cy="78" rx="70" ry="52" fill="url(#olive3A)"/>
+      <ellipse cx="110" cy="66" rx="52" ry="33" fill="#dfe9a6" opacity="0.40"/>
+      <ellipse cx="118" cy="70" rx="22" ry="14" fill="#f9f7d1" opacity="0.28"/>
+      <path d="M72 101 C 86 118, 94 132, 100 152" stroke="#667b4d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M123 79 C 140 93, 152 112, 162 134" stroke="#5b7349" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M74 70 C 57 60, 42 49, 23 28" stroke="#45653d" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M131 62 C 151 49, 171 42, 192 24" stroke="#4a6c3f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="192" cy="23" rx="11" ry="18" fill="#82a566" transform="rotate(-28 192 23)"/>
+      <ellipse cx="23" cy="27" rx="10" ry="17" fill="#75975c" transform="rotate(18 23 27)"/>
+    </g>
+  </g>
+
+  <g fill="#f5ebd0" font-family="Georgia, serif" font-size="22" font-weight="600" letter-spacing="1.8">
+    <text x="32" y="364">NOCELLARA DEL BELICE</text>
+  </g>
+</svg>

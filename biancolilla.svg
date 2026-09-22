@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Biancolilla olives</title>
+  <desc id="desc">Premium realistic olive fruit photography-inspired illustration for Biancolilla.</desc>
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="20%" r="85%">
+      <stop offset="0%" stop-color="#2a2924"/>
+      <stop offset="100%" stop-color="#141210"/>
+    </radialGradient>
+    <radialGradient id="oliveMainA" cx="30%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#d3df9d"/>
+      <stop offset="18%" stop-color="#b7d071"/>
+      <stop offset="55%" stop-color="#7da05d"/>
+      <stop offset="100%" stop-color="#294329"/>
+    </radialGradient>
+    <radialGradient id="oliveMainB" cx="35%" cy="25%" r="82%">
+      <stop offset="0%" stop-color="#c9da84"/>
+      <stop offset="20%" stop-color="#a2c36a"/>
+      <stop offset="62%" stop-color="#658950"/>
+      <stop offset="100%" stop-color="#233824"/>
+    </radialGradient>
+    <filter id="shadow1" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="420" fill="url(#bg1)"/>
+  <circle cx="510" cy="90" r="86" fill="#d8b768" opacity="0.10"/>
+
+  <g filter="url(#shadow1)">
+    <g transform="translate(64 116) rotate(-10 146 90)">
+      <ellipse cx="140" cy="88" rx="68" ry="50" fill="url(#oliveMainA)"/>
+      <ellipse cx="158" cy="74" rx="52" ry="35" fill="#dbe8a4" opacity="0.40"/>
+      <ellipse cx="173" cy="78" rx="20" ry="13" fill="#f4f8d8" opacity="0.30"/>
+      <path d="M122 120 C 132 142, 142 154, 152 175" stroke="#5a724b" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M171 90 C 190 104, 208 120, 215 138" stroke="#57734d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M111 82 C 90 74, 70 62, 54 34" stroke="#45603e" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M169 67 C 190 55, 212 45, 242 28" stroke="#4a643f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="240" cy="26" rx="12" ry="18" fill="#7a9a5e" transform="rotate(-32 240 26)"/>
+      <ellipse cx="54" cy="34" rx="11" ry="18" fill="#759154" transform="rotate(18 54 34)"/>
+    </g>
+
+    <g transform="translate(245 185) rotate(8 112 72)">
+      <ellipse cx="112" cy="72" rx="64" ry="48" fill="url(#oliveMainB)"/>
+      <ellipse cx="126" cy="61" rx="48" ry="33" fill="#d0df8d" opacity="0.38"/>
+      <ellipse cx="138" cy="64" rx="20" ry="13" fill="#f8fbd4" opacity="0.26"/>
+      <path d="M92 94 C 106 112, 112 123, 117 143" stroke="#5d754c" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M141 78 C 158 92, 167 109, 172 130" stroke="#59724d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M91 70 C 74 62, 58 52, 44 24" stroke="#415f3b" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M142 59 C 160 44, 176 35, 196 18" stroke="#4a653e" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="196" cy="16" rx="11" ry="18" fill="#769e5a" transform="rotate(-33 196 16)"/>
+      <ellipse cx="45" cy="24" rx="10" ry="17" fill="#6d8d4f" transform="rotate(14 45 24)"/>
+    </g>
+
+    <g transform="translate(364 100) rotate(-9 88 76)">
+      <ellipse cx="90" cy="78" rx="70" ry="52" fill="url(#oliveMainA)"/>
+      <ellipse cx="108" cy="68" rx="52" ry="34" fill="#dbe99c" opacity="0.40"/>
+      <ellipse cx="112" cy="72" rx="22" ry="14" fill="#f8f8d8" opacity="0.32"/>
+      <path d="M67 103 C 79 125, 86 140, 92 160" stroke="#607a4d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M122 82 C 138 95, 151 115, 163 139" stroke="#57744a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M70 70 C 53 60, 38 49, 22 25" stroke="#446541" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M128 63 C 149 51, 171 44, 192 28" stroke="#476940" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="192" cy="28" rx="11" ry="18" fill="#7fa15f" transform="rotate(-28 192 28)"/>
+      <ellipse cx="22" cy="24" rx="10" ry="17" fill="#729057" transform="rotate(16 22 24)"/>
+    </g>
+  </g>
+
+  <g fill="#f5ebd0" font-family="Georgia, serif" font-size="30" font-weight="600" letter-spacing="2">
+    <text x="58" y="364">BIANCOLILLA</text>
+  </g>
+</svg>

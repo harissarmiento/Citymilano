@@ -1,0 +1,969 @@
+:root {
+  --bg: #120d0d;
+  --bg-soft: #1a1212;
+  --panel: rgba(45, 23, 15, 0.82);
+  --panel-alt: rgba(17, 11, 11, 0.92);
+  --text: #f7f1e7;
+  --muted: #d1c1a5;
+  --line: rgba(212, 171, 92, 0.2);
+  --primary: #d8b36a;
+  --primary-strong: #c99a4d;
+  --accent: #8a1d1d;
+  --shadow: 0 25px 60px rgba(10, 7, 7, 0.45);
+  --radius-lg: 32px;
+  --radius-md: 18px;
+  --container: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(184, 112, 52, 0.18), transparent 24%),
+    radial-gradient(circle at right, rgba(138, 29, 29, 0.22), transparent 22%),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+main#top {
+  display: flex;
+  flex-direction: column;
+}
+
+#oil-and-bread {
+  order: 1;
+}
+
+#our-oysters {
+  order: 2;
+}
+
+#seafood {
+  order: 3;
+}
+
+#meat {
+  order: 4;
+}
+
+#service {
+  order: 5;
+}
+
+#menu-section {
+  order: 6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.section {
+  padding: 6.25rem 0;
+}
+
+.section-alt {
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(18px);
+  background: rgba(17, 11, 11, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 82px;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(212, 171, 92, 0.4);
+  box-shadow: 0 12px 20px rgba(8, 12, 18, 0.24);
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.brand-text {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  color: #f4dfb2;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.nav-links a {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.45rem;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--text);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  color: #1b120f;
+  background: linear-gradient(135deg, var(--primary), #f3d8a0);
+  box-shadow: 0 18px 28px rgba(216, 179, 106, 0.2);
+}
+
+.button-secondary {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+}
+
+.hero {
+  padding-top: 5.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.eyebrow,
+.section-tag {
+  margin: 0 0 1rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-size: 0.76rem;
+}
+
+.hero-copy h1,
+.about-copy h2,
+.section-header h2,
+.contact-wrap h2 {
+  margin: 0;
+  letter-spacing: -0.04em;
+  line-height: 0.96;
+}
+
+.hero-copy h1 {
+  font-size: clamp(3.2rem, 7vw, 5.6rem);
+  max-width: 620px;
+}
+
+.lead {
+  max-width: 620px;
+  margin-top: 1.2rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.mini-stats {
+  list-style: none;
+  padding: 0;
+  margin: 2.2rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mini-stats li {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.mini-stats strong {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+  color: var(--text);
+}
+
+.mini-stats span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 680px;
+  display: grid;
+  place-items: center;
+}
+
+.visual-card {
+  position: relative;
+  width: min(88%, 510px);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(18, 26, 43, 0.72), rgba(10, 16, 28, 0.92));
+  box-shadow: var(--shadow);
+}
+
+.card-main {
+  border-radius: var(--radius-lg);
+  padding: 1.2rem;
+}
+
+.profile-badge {
+  display: inline-flex;
+  padding: 0.5rem 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  background: rgba(216, 179, 106, 0.12);
+  border: 1px solid rgba(216, 179, 106, 0.3);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.portrait-wrap {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 560px;
+  background: linear-gradient(160deg, #180f10, #361a1d);
+}
+
+.portrait-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(216, 179, 106, 0.25), transparent 28%);
+}
+
+.portrait-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant-image-wrap {
+  min-height: 620px;
+}
+
+.floating-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.1rem;
+  background: rgba(11, 16, 32, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+}
+
+.card-top {
+  top: 2.2rem;
+  right: 0;
+}
+
+.card-bottom {
+  bottom: 2.7rem;
+  left: 0;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about-copy h2,
+.section-header h2,
+.contact-wrap h2 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+}
+
+.about-copy p {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.about-points {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.icon {
+  display: inline-grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, rgba(143, 211, 255, 0.18), rgba(255, 209, 102, 0.14));
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.info-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.info-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.oil-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.oil-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.oil-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.oil-card-body {
+  padding: 0.9rem 0.95rem 1rem;
+}
+
+.oil-card-body span {
+  display: inline-block;
+  color: var(--text);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.section-header {
+  margin-bottom: 2.4rem;
+}
+
+.section-header h2 {
+  max-width: 760px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-card {
+  padding: 1.8rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.skill-card h3 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.skill-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.skill-card li + li {
+  margin-top: 0.65rem;
+}
+
+.menu-category-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.menu-category {
+  padding: 2.2rem 2rem;
+  border: 1px solid rgba(212, 171, 92, 0.22);
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(24, 18, 15, 0.86), rgba(22, 15, 15, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.menu-category h3 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.1rem, 3vw, 2.8rem);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.menu-item {
+  padding: 1.4rem 0;
+  border-top: 1px solid rgba(212, 171, 92, 0.12);
+}
+
+.menu-item:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.menu-name {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.45;
+  margin-bottom: 0.55rem;
+  font-size: 0.96rem;
+}
+
+.menu-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+.menu-cutlery {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+  color: rgba(241, 232, 215, 0.68);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.menu-cutlery img {
+  width: 64px;
+  height: 44px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.menu-cutlery span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.menu-note {
+  margin: 1.25rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(212, 171, 92, 0.12);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.site-footer {
+  padding: 1.5rem 1.25rem 2.5rem;
+  text-align: center;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.language-label {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.language-button {
+  min-width: 76px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(212, 171, 92, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+.language-button:hover,
+.language-button.active {
+  border-color: var(--primary);
+  background: rgba(212, 171, 92, 0.12);
+  color: var(--primary);
+}
+
+.meat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.meat-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.meat-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.meat-card-body {
+  padding: 1rem;
+}
+
+.meat-card h3 {
+  margin: 0 0 0.4rem;
+  color: var(--primary);
+  font-size: 1.25rem;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+.meat-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.meat-card .meat-origin {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(212, 171, 92, 0.12);
+  color: var(--primary);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.meat-note {
+  max-width: 800px;
+  margin-top: 1.5rem;
+}
+
+.seafood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.seafood-card {
+  overflow: hidden;
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.seafood-card img {
+  width: calc(100% + 2.8rem);
+  height: 200px;
+  margin: -1.4rem -1.4rem 1.2rem;
+  display: block;
+  object-fit: cover;
+}
+
+.seafood-card-body {
+  padding: 0 0.05rem;
+}
+
+.seafood-card h3 {
+  margin: 0 0 0.65rem;
+  color: var(--primary);
+  font-size: 1.2rem;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+.seafood-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.seafood-card .seafood-origin {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.oyster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.oyster-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.oyster-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.oyster-card-body {
+  padding: 1rem;
+}
+
+.oyster-card h4 {
+  margin: 0 0 0.35rem;
+  color: var(--text);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.65rem;
+  letter-spacing: 0.04em;
+}
+
+.oyster-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.oyster-card .oyster-origin {
+  margin-bottom: 0.55rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1.2rem;
+  align-items: start;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.year {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-section {
+  padding-bottom: 7rem;
+}
+
+.contact-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(143, 211, 255, 0.07), rgba(255, 209, 102, 0.08));
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.contact-box a {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.site-footer {
+  padding: 1.5rem 0 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.nav-toggle {
+  display: none;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+}
+
+.nav-toggle span + span {
+  margin-top: 0.38rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 920px) {
+  .hero-grid,
+  .about-grid,
+  .skills-grid,
+  .contact-wrap,
+  .oil-gallery,
+  .oyster-grid {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .meat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seafood-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-visual {
+    min-height: 520px;
+  }
+
+  .skills-grid {
+    display: grid;
+  }
+}
+
+@media (max-width: 760px) {
+  .meat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seafood-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+    order: 2;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0 0.6rem;
+    order: 3;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .mini-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrap {
+    display: grid;
+    text-align: left;
+  }
+}

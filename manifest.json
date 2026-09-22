@@ -1,0 +1,17 @@
+{
+  "name": "Haris Notes | Restaurant",
+  "short_name": "Haris Notes",
+  "description": "A refined restaurant experience shaped by seasonal ingredients, warm hospitality, and thoughtful pours.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#171010",
+  "theme_color": "#171010",
+  "icons": [
+    {
+      "src": "assets/logo.webp",
+      "sizes": "267x267",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

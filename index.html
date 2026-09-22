@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haris Notes | Restaurant</title>
+    <meta
+      name="description"
+      content="Haris Notes is a refined restaurant experience shaped by seasonal ingredients, warm hospitality, and thoughtful pours."
+    />
+    <meta name="theme-color" content="#171010" />
+    <meta name="apple-mobile-web-app-title" content="Haris Notes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="assets/logo.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav">
+          <a class="brand" href="#top" aria-label="Home">
+            <span class="brand-mark">
+              <img src="assets/logo-sommelier.svg" alt="Sommelier restaurant logo" />
+            </span>
+            <span class="brand-text">Haris Notes</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-links" aria-label="Main navigation">
+            <a href="#menu-section">Menu</a>
+            <a href="#oil-and-bread">Oil and Bread</a>
+            <a href="#our-oysters">Our Oysters</a>
+            <a href="#meat">Meat</a>
+            <a href="#seafood">Seafood</a>
+            <a href="#service">Service</a>
+          </nav>
+
+        </div>
+      </header>
+
+      <main id="top">
+        <section id="our-oysters" class="section section-alt">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section-tag">Our Oysters</p>
+              <h2>Freshly shucked, chilled, and served with the rhythm of the sea.</h2>
+            </div>
+
+            <div class="menu-category-wrap reveal">
+              <div class="menu-category">
+                <h3>Selection</h3>
+                <div class="oyster-grid">
+                  <article class="oyster-card">
+                    <img src="assets/regal-oro-oysters.jpg" alt="Fresh oysters on ice" />
+                    <div class="oyster-card-body">
+                      <h4>REGAL ORO</h4>
+                      <p class="oyster-origin">Ireland</p>
+                      <p>Delicate, creamy and distinctly elegant.</p>
+                    </div>
+                  </article>
+                  <article class="oyster-card">
+                    <img src="assets/goro-oysters.jpg" alt="Fresh oysters with lemon" />
+                    <div class="oyster-card-body">
+                      <h4>GORO</h4>
+                      <p class="oyster-origin">Goro · Po Delta · Italy</p>
+                      <p>Silky, rich and beautifully saline.</p>
+                    </div>
+                  </article>
+                  <article class="oyster-card">
+                    <img src="assets/gillardeau-oysters.jpg" alt="Oyster shells on a coastal beach" />
+                    <div class="oyster-card-body">
+                      <h4>GILARDEAU</h4>
+                      <p class="oyster-origin">France</p>
+                      <p>Pure, briny and refined in texture.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="oil-and-bread" class="section section-alt">
+          <div class="container about-grid">
+            <div class="about-copy reveal">
+              <p class="section-tag">Oil & Bread</p>
+              <h2>From the oven and the grove, the first taste of the evening.</h2>
+            </div>
+
+            <div class="about-points reveal">
+              <div class="info-card">
+                <span class="icon">✦</span>
+                <div>
+                  <h3>BREAD</h3>
+                  <p>Multigrain · Sourdough · Made in house · Sicilian ingredients</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <span class="icon">⚡</span>
+                <div>
+                  <h3>OIL</h3>
+                  <p>Val di Mazara DOP · EVO · Cerasuola · Biancolilla · Nocellara del Belice</p>
+                </div>
+              </div>
+
+              <div class="oil-gallery" aria-label="Olive varietals">
+                <article class="oil-card">
+                  <img src="assets/biancolilla-fruit.jpg" alt="Biancolilla olives" />
+                  <div class="oil-card-body">
+                    <span>Biancolilla</span>
+                  </div>
+                </article>
+                <article class="oil-card">
+                  <img src="assets/cerasuola-fruit.jpg" alt="Cerasuola olives" />
+                  <div class="oil-card-body">
+                    <span>Cerasuola</span>
+                  </div>
+                </article>
+                <article class="oil-card">
+                  <img src="assets/nocellara-belice-fruit.jpg" alt="Nocellara del Belice olives" />
+                  <div class="oil-card-body">
+                    <span>Nocellara del Belice</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="meat" class="section section-alt">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section-tag">Meat</p>
+              <h2>Selected cuts, dry-aged and charcoal-grilled.</h2>
+            </div>
+
+            <div class="meat-grid reveal">
+              <article class="meat-card">
+                <img src="assets/meat-tomahawk.jpg" alt="Raw beef cut for Australian Wagyu tomahawk" />
+                <div class="meat-card-body">
+                  <h3>TOMAHAWK AUSTRALIA WAGYU</h3>
+                  <p>Australian Wagyu Tomahawk</p>
+                  <p class="meat-origin">Australia · Rib section</p>
+                </div>
+              </article>
+              <article class="meat-card">
+                <img src="assets/meat-fiorentina.jpg" alt="Raw T-bone steak for Piedmontese beef" />
+                <div class="meat-card-body">
+                  <h3>FIORENTINA DI BOVINO PIEMONTESE</h3>
+                  <p>Piedmontese Beef T-Bone Steak</p>
+                  <p class="meat-origin">Piedmont, Italy · Short loin</p>
+                </div>
+              </article>
+              <article class="meat-card">
+                <img src="assets/meat-manzetta.jpg" alt="Raw whole beef cut for Manzetta Prussiana" />
+                <div class="meat-card-body">
+                  <h3>MANZETTA PRUSSIANA</h3>
+                  <p>Manzetta Prussiana Beef</p>
+                  <p class="meat-origin">Poland · Sirloin section</p>
+                </div>
+              </article>
+              <article class="meat-card">
+                <img src="assets/meat-filetto.jpg" alt="Raw beef tenderloin for Argentinian beef fillet" />
+                <div class="meat-card-body">
+                  <h3>FILETTO ARGENTINO</h3>
+                  <p>Argentinian Beef Fillet</p>
+                  <p class="meat-origin">Argentina · Tenderloin</p>
+                </div>
+              </article>
+            </div>
+            <p class="menu-note meat-note">
+              Tutte le nostre selezioni di carne sono frollate e cotte al carbone<br />
+              All our selected cuts are dry-aged and charcoal-grilled
+            </p>
+          </div>
+        </section>
+
+        <section id="seafood" class="section section-alt">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section-tag">Seafood</p>
+              <h2>From the Mediterranean, with the character of the sea.</h2>
+            </div>
+
+            <div class="seafood-grid reveal">
+              <article class="seafood-card">
+                <img src="assets/seafood-clam.jpg" alt="Fresh clams" />
+                <div class="seafood-card-body">
+                <h3>CLAM</h3>
+                <p class="seafood-origin">Mediterranean Sea</p>
+                <p>Fresh clam with a clean, delicate ocean flavour.</p>
+                </div>
+              </article>
+              <article class="seafood-card">
+                <img src="assets/seafood-truffle-clam.jpg" alt="Sea truffle clam shellfish" />
+                <div class="seafood-card-body">
+                <h3>SEA TRUFFLE CLAM</h3>
+                <p class="seafood-origin">Italy</p>
+                <p>Rare sea truffle clam with a deep, mineral salinity.</p>
+                </div>
+              </article>
+              <article class="seafood-card">
+                <img src="assets/seafood-smooth-clam.jpg" alt="Smooth clams" />
+                <div class="seafood-card-body">
+                <h3>SMOOTH CLAM</h3>
+                <p class="seafood-origin">Adriatic Sea</p>
+                <p>Silky smooth clam with a bright, briny finish.</p>
+                </div>
+              </article>
+              <article class="seafood-card">
+                <img src="assets/seafood-urchin.jpg" alt="Fresh sea urchin" />
+                <div class="seafood-card-body">
+                <h3>SEA URCHIN</h3>
+                <p class="seafood-origin">Sicily, Italy</p>
+                <p>Delicate sea urchin with a rich, creamy texture.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="service" class="section">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section-tag">Service</p>
+              <h2>Dining that feels personal from the first pour to the final course.</h2>
+            </div>
+          </div>
+        </section>
+
+        <section id="menu-section" class="section section-alt">
+          <div class="container">
+            <div class="section-header reveal">
+              <p class="section-tag">Menu</p>
+              <h2>Signature plates</h2>
+            </div>
+
+            <div class="menu-category-wrap reveal">
+              <div class="menu-category">
+                <h3>Primi Piatti</h3>
+                <div class="menu-item">
+                  <div class="menu-name">SPAGHETTO GAMBERO ROSSO, BURRO SALATO, LIMONE E CAVIALE</div>
+                  <p>
+                    “Spaghetti with red prawn, salted butter, lemon and caviar. Delicate, creamy and
+                    fresh.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fusillone-fork.webp" alt="Pasta fork" />
+                    <span>Recommended cutlery: Pasta fork</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">RISOTTO VONGOLE, RICCI, ZAFFERANO ED ESSENZA DI BERGAMOTTO</div>
+                  <p>
+                    “Risotto with clams, sea urchin, saffron and bergamot. Creamy, marine and
+                    aromatic.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/risotto-spoon.jpg" alt="Risotto spoon" />
+                    <span>Recommended cutlery: Risotto spoon</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">FUSILLONE FRUTTI DI MARE CON OLIO AL BASILICO</div>
+                  <p>
+                    “Fusillone with seafood and basil oil. Fresh and Mediterranean.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fusillone-fork.webp" alt="Fusillone pasta fork" />
+                    <span>Recommended cutlery: Pasta fork</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">CANNELLONE ALLA NORMA AFFUMICATO</div>
+                  <p>
+                    “Smoked Cannellone alla Norma, with eggplant, tomato and cheese.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fork-knife.webp" alt="Fork and knife" />
+                    <span>Recommended cutlery: Fork + knife</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">BOTTONE DI PASTA, STRACOTTO DI MANZO, PRIMO SALE E ZAFFERANO</div>
+                  <p>
+                    “Filled pasta with slow-braised beef, Primo Sale and saffron. Rich and delicate.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fork-knife.webp" alt="Fork and knife" />
+                    <span>Recommended cutlery: Fork + knife</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-category">
+                <h3>Secondo Piatti</h3>
+                <div class="menu-item">
+                  <div class="menu-name">SPIGOLA CON CREMA DI SCALOGNO, FUNGHI CARDONCELLI E OLIO AL ROSMARINO</div>
+                  <p>
+                    “Sea bass with shallot cream, Cardoncelli mushrooms and rosemary oil.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">OMBRINA, CREMA DI FINOCCHIO, PRUGNA E PATATE</div>
+                  <p>
+                    “Meagre with fennel cream, plum and potatoes.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">TONNO CON CAVOLFIORE, CIPOLLA E LIQUIRIZIA</div>
+                  <p>
+                    “Tuna with cauliflower, onion and liquorice.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">FILETTO DI MANZO, BIETOLE, JUS DI MANZO E FONDUTA DI VASTEDDA DEL BELICE</div>
+                  <p>
+                    “Beef fillet with Swiss chard, beef jus and Vastedda del Belice fondue.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fork-meat-knife.webp" alt="Fork and meat knife" />
+                    <span>Recommended cutlery: Fork + meat knife</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">SEGRETO DI MAIALINO IBERICO</div>
+                  <p>
+                    “Iberian pork secreto with baby carrots, grilled artichoke, black olive crumble and pork jus.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fork-meat-knife.webp" alt="Fork and meat knife" />
+                    <span>Recommended cutlery: Fork + meat knife</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="menu-name">SALMONE CON CRÈME FRAÎCHE, ERBA CIPOLLINA E CAVIALE</div>
+                  <p>
+                    “Salmon with crème fraîche, chives and caviar.”
+                  </p>
+                  <div class="menu-cutlery">
+                    <img src="assets/fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="language-switcher" aria-label="Language selector">
+          <span class="language-label">Language</span>
+          <button class="language-button active" type="button" data-language="en" aria-pressed="true">
+            English
+          </button>
+          <span aria-hidden="true">/</span>
+          <button class="language-button" type="button" data-language="it" aria-pressed="false">
+            Italiano
+          </button>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="script.js?v=2"></script>
+  </body>
+</html>

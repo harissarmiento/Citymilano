@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Cerasuola olives</title>
+  <desc id="desc">Premium realistic olive fruit photography-inspired illustration for Cerasuola.</desc>
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="18%" r="85%">
+      <stop offset="0%" stop-color="#2d2a24"/>
+      <stop offset="100%" stop-color="#15140f"/>
+    </radialGradient>
+    <radialGradient id="olive2A" cx="35%" cy="26%" r="82%">
+      <stop offset="0%" stop-color="#d5e694"/>
+      <stop offset="20%" stop-color="#b5c56c"/>
+      <stop offset="58%" stop-color="#728a4b"/>
+      <stop offset="100%" stop-color="#273922"/>
+    </radialGradient>
+    <radialGradient id="olive2B" cx="35%" cy="28%" r="82%">
+      <stop offset="0%" stop-color="#dfeaa5"/>
+      <stop offset="18%" stop-color="#b7d06a"/>
+      <stop offset="55%" stop-color="#76904e"/>
+      <stop offset="100%" stop-color="#263825"/>
+    </radialGradient>
+    <filter id="shadow2" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="420" fill="url(#bg2)"/>
+  <circle cx="118" cy="88" r="82" fill="#d5b36c" opacity="0.10"/>
+
+  <g filter="url(#shadow2)">
+    <g transform="translate(72 150) rotate(-9 120 80)">
+      <ellipse cx="120" cy="80" rx="64" ry="50" fill="url(#olive2A)"/>
+      <ellipse cx="136" cy="67" rx="48" ry="33" fill="#deef9d" opacity="0.42"/>
+      <ellipse cx="145" cy="72" rx="20" ry="13" fill="#f9f8cf" opacity="0.27"/>
+      <path d="M100 101 C 110 122, 116 133, 122 154" stroke="#66714f" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M148 87 C 164 101, 176 119, 183 138" stroke="#5a714d" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M98 76 C 82 66, 68 56, 49 29" stroke="#4b6a40" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M148 62 C 170 49, 188 40, 212 22" stroke="#507146" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="214" cy="20" rx="11" ry="18" fill="#7e9f62" transform="rotate(-27 214 20)"/>
+      <ellipse cx="49" cy="30" rx="10" ry="17" fill="#71935c" transform="rotate(20 49 30)"/>
+    </g>
+
+    <g transform="translate(246 90) rotate(9 120 78)">
+      <ellipse cx="120" cy="78" rx="66" ry="49" fill="url(#olive2B)"/>
+      <ellipse cx="136" cy="66" rx="50" ry="34" fill="#dfe9b0" opacity="0.40"/>
+      <ellipse cx="147" cy="70" rx="21" ry="13" fill="#f8f7d4" opacity="0.27"/>
+      <path d="M96 100 C 110 122, 116 132, 123 153" stroke="#62764e" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M148 83 C 167 97, 178 115, 186 136" stroke="#547246" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M100 74 C 81 65, 66 55, 50 28" stroke="#476742" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M147 60 C 164 47, 183 39, 204 20" stroke="#4a6b3d" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="205" cy="18" rx="12" ry="18" fill="#7fa15c" transform="rotate(-30 205 18)"/>
+      <ellipse cx="48" cy="26" rx="10" ry="17" fill="#72945e" transform="rotate(16 48 26)"/>
+    </g>
+
+    <g transform="translate(366 170) rotate(-10 92 70)">
+      <ellipse cx="92" cy="70" rx="66" ry="49" fill="url(#olive2A)"/>
+      <ellipse cx="108" cy="58" rx="49" ry="33" fill="#e8f0b0" opacity="0.40"/>
+      <ellipse cx="117" cy="62" rx="21" ry="13" fill="#f9f8d1" opacity="0.27"/>
+      <path d="M70 92 C 80 111, 89 126, 95 145" stroke="#697b50" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M120 75 C 136 89, 147 108, 156 129" stroke="#4d7146" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M75 65 C 58 58, 43 49, 24 29" stroke="#42663d" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M128 50 C 147 39, 168 33, 188 18" stroke="#4e6c41" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="188" cy="18" rx="11" ry="18" fill="#7d9f5f" transform="rotate(-30 188 18)"/>
+      <ellipse cx="24" cy="28" rx="10" ry="17" fill="#749b5b" transform="rotate(18 24 28)"/>
+    </g>
+  </g>
+
+  <g fill="#f4ebd2" font-family="Georgia, serif" font-size="30" font-weight="600" letter-spacing="2">
+    <text x="164" y="364">CERASUOLA</text>
+  </g>
+</svg>
