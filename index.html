@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haris Notes | Restaurant</title>
+    <title>Guidelines | Restaurant</title>
     <meta
       name="description"
-      content="Haris Notes is a refined restaurant experience shaped by seasonal ingredients, warm hospitality, and thoughtful pours."
+      content="Guidelines is a refined restaurant experience shaped by seasonal ingredients, warm hospitality, and thoughtful pours."
     />
     <meta name="theme-color" content="#171010" />
-    <meta name="apple-mobile-web-app-title" content="Haris Notes" />
+    <meta name="apple-mobile-web-app-title" content="Guidelines" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="manifest" href="manifest.json" />
@@ -30,7 +30,7 @@
             <span class="brand-mark">
               <img src="logo-sommelier.svg" alt="Sommelier restaurant logo" />
             </span>
-            <span class="brand-text">Haris Notes</span>
+            <span class="brand-text">Guidelines</span>
           </a>
 
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -63,7 +63,7 @@
               <div class="menu-category">
                 <h3>Selection</h3>
                 <div class="oyster-grid">
-                  <article class="oyster-card">
+                  <article class="oyster-card origin-card" tabindex="0" role="button" data-origin-type="Oyster origin" data-origin="Ireland" data-lat="53.1424" data-lon="-7.6921">
                     <img src="regal-oro-oysters.jpg" alt="Fresh oysters on ice" />
                     <div class="oyster-card-body">
                       <h4>REGAL ORO</h4>
@@ -71,7 +71,7 @@
                       <p>Delicate, creamy and distinctly elegant.</p>
                     </div>
                   </article>
-                  <article class="oyster-card">
+                  <article class="oyster-card origin-card" tabindex="0" role="button" data-origin-type="Oyster origin" data-origin="Goro, Po Delta, Italy" data-lat="44.8558" data-lon="12.2986">
                     <img src="goro-oysters.jpg" alt="Fresh oysters with lemon" />
                     <div class="oyster-card-body">
                       <h4>GORO</h4>
@@ -79,12 +79,20 @@
                       <p>Silky, rich and beautifully saline.</p>
                     </div>
                   </article>
-                  <article class="oyster-card">
+                  <article class="oyster-card origin-card" tabindex="0" role="button" data-origin-type="Oyster origin" data-origin="France" data-lat="46.2276" data-lon="2.2137">
                     <img src="gillardeau-oysters.jpg" alt="Oyster shells on a coastal beach" />
                     <div class="oyster-card-body">
                       <h4>GILARDEAU</h4>
                       <p class="oyster-origin">France</p>
                       <p>Pure, briny and refined in texture.</p>
+                    </div>
+                  </article>
+                  <article class="oyster-card origin-card" tabindex="0" role="button" data-origin-type="Oyster origin" data-origin="Marennes-Oléron, France" data-lat="45.8228" data-lon="-1.1005">
+                    <img src="gillardeau-oysters.jpg" alt="Fine de Claire oysters" />
+                    <div class="oyster-card-body">
+                      <h4>FINE DE CLAIRE</h4>
+                      <p class="oyster-origin">Marennes-Oléron, France</p>
+                      <p>Delicate, lightly mineral and gently saline.</p>
                     </div>
                   </article>
                 </div>
@@ -148,7 +156,7 @@
             </div>
 
             <div class="meat-grid reveal">
-              <article class="meat-card">
+              <article class="meat-card origin-card" tabindex="0" role="button" data-origin-type="Meat origin" data-origin="Australia" data-lat="-25.2744" data-lon="133.7751">
                 <img src="meat-tomahawk.jpg" alt="Raw beef cut for Australian Wagyu tomahawk" />
                 <div class="meat-card-body">
                   <h3>TOMAHAWK AUSTRALIA WAGYU</h3>
@@ -156,7 +164,7 @@
                   <p class="meat-origin">Australia · Rib section</p>
                 </div>
               </article>
-              <article class="meat-card">
+              <article class="meat-card origin-card" tabindex="0" role="button" data-origin-type="Meat origin" data-origin="Piedmont, Italy" data-lat="45.0703" data-lon="7.6869">
                 <img src="meat-fiorentina.jpg" alt="Raw T-bone steak for Piedmontese beef" />
                 <div class="meat-card-body">
                   <h3>FIORENTINA DI BOVINO PIEMONTESE</h3>
@@ -164,7 +172,7 @@
                   <p class="meat-origin">Piedmont, Italy · Short loin</p>
                 </div>
               </article>
-              <article class="meat-card">
+              <article class="meat-card origin-card" tabindex="0" role="button" data-origin-type="Meat origin" data-origin="Poland" data-lat="52.2297" data-lon="21.0122">
                 <img src="meat-manzetta.jpg" alt="Raw whole beef cut for Manzetta Prussiana" />
                 <div class="meat-card-body">
                   <h3>MANZETTA PRUSSIANA</h3>
@@ -172,7 +180,7 @@
                   <p class="meat-origin">Poland · Sirloin section</p>
                 </div>
               </article>
-              <article class="meat-card">
+              <article class="meat-card origin-card" tabindex="0" role="button" data-origin-type="Meat origin" data-origin="Argentina" data-lat="-34.6037" data-lon="-58.3816">
                 <img src="meat-filetto.jpg" alt="Raw beef tenderloin for Argentinian beef fillet" />
                 <div class="meat-card-body">
                   <h3>FILETTO ARGENTINO</h3>
@@ -196,7 +204,7 @@
             </div>
 
             <div class="seafood-grid reveal">
-              <article class="seafood-card">
+              <article class="seafood-card origin-card" tabindex="0" role="button" data-origin-type="Seafood origin" data-origin="Mediterranean Sea" data-lat="35.0" data-lon="18.0">
                 <img src="seafood-clam.jpg" alt="Fresh clams" />
                 <div class="seafood-card-body">
                 <h3>CLAM</h3>
@@ -204,7 +212,7 @@
                 <p>Fresh clam with a clean, delicate ocean flavour.</p>
                 </div>
               </article>
-              <article class="seafood-card">
+              <article class="seafood-card origin-card" tabindex="0" role="button" data-origin-type="Seafood origin" data-origin="Italy" data-lat="42.5" data-lon="12.5">
                 <img src="seafood-truffle-clam.jpg" alt="Sea truffle clam shellfish" />
                 <div class="seafood-card-body">
                 <h3>SEA TRUFFLE CLAM</h3>
@@ -212,7 +220,7 @@
                 <p>Rare sea truffle clam with a deep, mineral salinity.</p>
                 </div>
               </article>
-              <article class="seafood-card">
+              <article class="seafood-card origin-card" tabindex="0" role="button" data-origin-type="Seafood origin" data-origin="Adriatic Sea" data-lat="43.5" data-lon="15.5">
                 <img src="seafood-smooth-clam.jpg" alt="Smooth clams" />
                 <div class="seafood-card-body">
                 <h3>SMOOTH CLAM</h3>
@@ -220,7 +228,7 @@
                 <p>Silky smooth clam with a bright, briny finish.</p>
                 </div>
               </article>
-              <article class="seafood-card">
+              <article class="seafood-card origin-card" tabindex="0" role="button" data-origin-type="Seafood origin" data-origin="Sicily, Italy" data-lat="37.5999" data-lon="14.0154">
                 <img src="seafood-urchin.jpg" alt="Fresh sea urchin" />
                 <div class="seafood-card-body">
                 <h3>SEA URCHIN</h3>
@@ -232,11 +240,142 @@
           </div>
         </section>
 
+        <div class="map-modal" hidden>
+          <div class="map-modal-backdrop" data-close-map></div>
+          <section class="map-dialog" role="dialog" aria-modal="true" aria-labelledby="map-title">
+            <button class="map-close" type="button" aria-label="Close origin map" data-close-map>&times;</button>
+            <p class="section-tag map-origin-type">Origin map</p>
+            <h2 id="map-title">Origin map</h2>
+            <p class="map-location"></p>
+            <iframe
+              class="origin-map"
+              title="Map showing the meat origin"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+        </div>
+
         <section id="service" class="section">
           <div class="container">
             <div class="section-header reveal">
               <p class="section-tag">Service</p>
-              <h2>Dining that feels personal from the first pour to the final course.</h2>
+              <h2>Guest Service Guidelines</h2>
+            </div>
+            <div class="service-guidelines reveal">
+              <section class="service-step">
+                <h3>Step 1 — Guest Welcome</h3>
+                <p class="service-responsible">Responsible: Hostess / Supervisor</p>
+                <ul>
+                  <li>Escort the guest to the table.</li>
+                  <li>Greet them with a welcome: “Welcome to City Milano.”</li>
+                  <li>Ask whether they would like still or sparkling water.</li>
+                  <li>Present the menu.</li>
+                  <li>Place a handbag holder beside female guests.</li>
+                  <li>If children are present, bring a high chair, if available.</li>
+                  <li>If the booking includes a birthday or anniversary, notify the responsible waiter so they can arrange a complimentary dessert with a candle or a complimentary welcome glass.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 2 — Taking the Order</h3>
+                <p class="service-responsible">Responsible: Chef de Rang</p>
+                <ul>
+                  <li>Introduce the menu.</li>
+                  <li>Suggest a cocktail or a glass of wine, such as a glass of sparkling wine to start.</li>
+                  <li>Present the meat selection and the fresh fish of the day.</li>
+                  <li>Offer to accompany the guest to the fish and meat display, taking care not to cause congestion in the dining room.</li>
+                  <li>Advise guests of the longer waiting times for whole-cooked fish of the day and meat dishes.</li>
+                  <li>Check whether guests have any allergies or intolerances.</li>
+                  <li>Take the order at the table.</li>
+                </ul>
+                <p class="service-note">To be defined: How long to wait before taking the order.</p>
+              </section>
+              <section class="service-step">
+                <h3>Step 3 — Wine Service</h3>
+                <ul>
+                  <li>Bring the bottle to the guest’s left and show the label to the person who ordered it.</li>
+                  <li>Use the <em>panadora</em> or tray as a base when opening the bottle.</li>
+                  <li>Pour a tasting for the person who ordered the wine and wait for approval before serving the other guests.</li>
+                  <li>Pour from the guest’s right, starting with the women, then the men, and proceeding clockwise.</li>
+                  <li>When the bottle is empty, ask whether the guests would like another.</li>
+                  <li>If it is the last bottle available, inform the guest before opening it.</li>
+                  <li>Waiters are responsible for pouring water and wine throughout the service.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 4 — Bread and Olive Oil</h3>
+                <p class="service-responsible">Responsible: Commis</p>
+                <ul>
+                  <li>Serve bread and olive oil before the amuse-bouche.</li>
+                  <li>Explain the selection; for details about the types of bread and olive oil, see the <em>Food Bible</em>.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 5 — Amuse-Bouche</h3>
+                <ul>
+                  <li>Serve after the bread and olive oil.</li>
+                  <li>Scrambled egg served in its shell, with Parmesan fondue and shavings of black truffle.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 6 — Place Setting</h3>
+                <p class="service-responsible">Reference: See the technical sheet.</p>
+                <div class="service-reference">
+                  <p><strong>Raw dishes:</strong> Provide a show plate and napkin for all sizes. Remove the pine cone, if necessary. For sharing, bring sharing plates and prepare the clips.</p>
+                  <p><strong>Seafood platter:</strong> Bring hand towels for guests to use at the end of the meal.</p>
+                  <p><strong>Caviar:</strong> Provide a butter knife for the whole table. Always serve with an ivory spoon.</p>
+                  <p><strong>Fish sold by weight:</strong> Two staff members serve the fish: one portions it and the other serves it.</p>
+                  <p><strong>Meat:</strong> See the specifications below.</p>
+                </div>
+                <div class="service-reference">
+                  <h4>Note — Meat cut specifications</h4>
+                  <ul>
+                    <li><em>Manzetta Prussiana:</em> portions under 500 g are not sold.</li>
+                    <li><em>Fiorentina:</em> minimum 1,000 g.</li>
+                    <li><em>Argentinian fillet:</em> from 200–250 g upwards.</li>
+                    <li><em>Tomahawk:</em> approximately 1.5 kg.</li>
+                    <li>Other cuts of meat: in 200 g increments.</li>
+                    <li>Meat sold by weight is always served with grills so guests can finish cooking it at the table.</li>
+                  </ul>
+                </div>
+              </section>
+              <section class="service-step">
+                <h3>Step 7 — Clearing and Changing Cutlery Between Courses</h3>
+                <ul>
+                  <li>Clear the plates as soon as each course is finished.</li>
+                  <li>Change the cutlery according to the next course, referring to the <em>Food Bible</em> for appropriate pairings.</li>
+                  <li>Keep clips and tongs ready for handling sharing plates.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 8 — Pre-Dessert Table Clearing</h3>
+                <ul>
+                  <li>Clear the table completely before serving dessert.</li>
+                  <li>Prepare the table with a stand for the petits fours (pre-dessert), to be served before the dessert ordered by the guests.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 9 — Petits Fours</h3>
+                <ul>
+                  <li>Always serve the petits fours, whether or not the table orders dessert.</li>
+                  <li>Serve them before the ordered dessert, or instead of it if the guests do not order dessert.</li>
+                </ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 10 — The Bill</h3>
+                <ul><li>Present the review card with the bill.</li></ul>
+              </section>
+              <section class="service-step">
+                <h3>Step 11 — Farewell</h3>
+                <ul>
+                  <li>Escort the guest to the exit.</li>
+                  <li>Say goodbye: “Thank you for dining with us / for visiting us. We wish you a lovely evening / the rest of your evening.”</li>
+                  <li>Clear the table within five minutes of the guests’ departure and reset it for the next service.</li>
+                </ul>
+              </section>
+              <section class="service-step service-closing">
+                <h3>End of Evening — Closing the Shift</h3>
+              </section>
             </div>
           </div>
         </section>
@@ -251,16 +390,19 @@
             <div class="menu-category-wrap reveal">
               <div class="menu-category">
                 <h3>Primi Piatti</h3>
-                <div class="menu-item">
-                  <div class="menu-name">SPAGHETTO GAMBERO ROSSO, BURRO SALATO, LIMONE E CAVIALE</div>
-                  <p>
-                    “Spaghetti with red prawn, salted butter, lemon and caviar. Delicate, creamy and
-                    fresh.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fusillone-fork.webp" alt="Pasta fork" />
-                    <span>Recommended cutlery: Pasta fork</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">SPAGHETTO GAMBERO ROSSO, BURRO SALATO, LIMONE E CAVIALE</div>
+                    <p>
+                      “Spaghetti with red prawn, salted butter, lemon and caviar. Delicate, creamy and
+                      fresh.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fusillone-fork.webp" alt="Pasta fork" />
+                      <span>Recommended cutlery: Pasta fork</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="spaghetto-gambero-rosso.png" alt="Spaghetto with red prawn and caviar" />
                 </div>
                 <div class="menu-item">
                   <div class="menu-name">RISOTTO VONGOLE, RICCI, ZAFFERANO ED ESSENZA DI BERGAMOTTO</div>
@@ -273,99 +415,126 @@
                     <span>Recommended cutlery: Risotto spoon</span>
                   </div>
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">FUSILLONE FRUTTI DI MARE CON OLIO AL BASILICO</div>
-                  <p>
-                    “Fusillone with seafood and basil oil. Fresh and Mediterranean.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fusillone-fork.webp" alt="Fusillone pasta fork" />
-                    <span>Recommended cutlery: Pasta fork</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">FUSILLONE FRUTTI DI MARE CON OLIO AL BASILICO</div>
+                    <p>
+                      “Fusillone with seafood and basil oil. Fresh and Mediterranean.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fusillone-fork.webp" alt="Fusillone pasta fork" />
+                      <span>Recommended cutlery: Pasta fork</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="fusillone-frutti-di-mare.png" alt="Fusillone pasta with seafood and basil oil" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">CANNELLONE ALLA NORMA AFFUMICATO</div>
-                  <p>
-                    “Smoked Cannellone alla Norma, with eggplant, tomato and cheese.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fork-knife.webp" alt="Fork and knife" />
-                    <span>Recommended cutlery: Fork + knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">CANNELLONE ALLA NORMA AFFUMICATO</div>
+                    <p>
+                      “Smoked Cannellone alla Norma, with eggplant, tomato and cheese.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fork-knife.webp" alt="Fork and knife" />
+                      <span>Recommended cutlery: Fork + knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="cannellone-alla-norma-affumicato.png" alt="Smoked Cannellone alla Norma with eggplant, tomato and cheese" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">BOTTONE DI PASTA, STRACOTTO DI MANZO, PRIMO SALE E ZAFFERANO</div>
-                  <p>
-                    “Filled pasta with slow-braised beef, Primo Sale and saffron. Rich and delicate.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fork-knife.webp" alt="Fork and knife" />
-                    <span>Recommended cutlery: Fork + knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">BOTTONE DI PASTA, STRACOTTO DI MANZO, PRIMO SALE E ZAFFERANO</div>
+                    <p>
+                      “Filled pasta with slow-braised beef, Primo Sale and saffron. Rich and delicate.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fork-knife.webp" alt="Fork and knife" />
+                      <span>Recommended cutlery: Fork + knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="bottone-di-pasta.png" alt="Bottone pasta with slow-braised beef, Primo Sale and saffron" />
                 </div>
               </div>
 
               <div class="menu-category">
                 <h3>Secondo Piatti</h3>
-                <div class="menu-item">
-                  <div class="menu-name">SPIGOLA CON CREMA DI SCALOGNO, FUNGHI CARDONCELLI E OLIO AL ROSMARINO</div>
-                  <p>
-                    “Sea bass with shallot cream, Cardoncelli mushrooms and rosemary oil.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
-                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">SPIGOLA CON CREMA DI SCALOGNO, FUNGHI CARDONCELLI E OLIO AL ROSMARINO</div>
+                    <p>
+                      “Sea bass with shallot cream, Cardoncelli mushrooms and rosemary oil.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                      <span>Recommended cutlery: Fish fork + fish knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="spigola-con-crema-di-scalogno.png" alt="Sea bass with shallot cream, Cardoncelli mushrooms and rosemary oil" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">OMBRINA, CREMA DI FINOCCHIO, PRUGNA E PATATE</div>
-                  <p>
-                    “Meagre with fennel cream, plum and potatoes.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
-                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">OMBRINA, CREMA DI FINOCCHIO, PRUGNA E PATATE</div>
+                    <p>
+                      “Meagre with fennel cream, plum and potatoes.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                      <span>Recommended cutlery: Fish fork + fish knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="ombrina-crema-di-finocchio.png" alt="Meagre with fennel cream, plum and potatoes" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">TONNO CON CAVOLFIORE, CIPOLLA E LIQUIRIZIA</div>
-                  <p>
-                    “Tuna with cauliflower, onion and liquorice.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
-                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">TONNO CON CAVOLFIORE, CIPOLLA E LIQUIRIZIA</div>
+                    <p>
+                      “Tuna with cauliflower, onion and liquorice.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                      <span>Recommended cutlery: Fish fork + fish knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="tonno-con-cavolfiore.png" alt="Tuna with cauliflower, onion and liquorice" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">FILETTO DI MANZO, BIETOLE, JUS DI MANZO E FONDUTA DI VASTEDDA DEL BELICE</div>
-                  <p>
-                    “Beef fillet with Swiss chard, beef jus and Vastedda del Belice fondue.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fork-meat-knife.webp" alt="Fork and meat knife" />
-                    <span>Recommended cutlery: Fork + meat knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">FILETTO DI MANZO, BIETOLE, JUS DI MANZO E FONDUTA DI VASTEDDA DEL BELICE</div>
+                    <p>
+                      “Beef fillet with Swiss chard, beef jus and Vastedda del Belice fondue.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fork-meat-knife.webp" alt="Fork and meat knife" />
+                      <span>Recommended cutlery: Fork + meat knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="filetto-di-manzo.png" alt="Beef fillet with Swiss chard, beef jus and Vastedda del Belice fondue" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">SEGRETO DI MAIALINO IBERICO</div>
-                  <p>
-                    “Iberian pork secreto with baby carrots, grilled artichoke, black olive crumble and pork jus.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fork-meat-knife.webp" alt="Fork and meat knife" />
-                    <span>Recommended cutlery: Fork + meat knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">SEGRETO DI MAIALINO IBERICO</div>
+                    <p>
+                      “Iberian pork secreto with baby carrots, grilled artichoke, black olive crumble and pork jus.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fork-meat-knife.webp" alt="Fork and meat knife" />
+                      <span>Recommended cutlery: Fork + meat knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="segreto-maialino-iberico.png" alt="Iberian pork secreto with baby carrots, grilled artichoke, black olive crumble and pork jus" />
                 </div>
-                <div class="menu-item">
-                  <div class="menu-name">SALMONE CON CRÈME FRAÎCHE, ERBA CIPOLLINA E CAVIALE</div>
-                  <p>
-                    “Salmon with crème fraîche, chives and caviar.”
-                  </p>
-                  <div class="menu-cutlery">
-                    <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
-                    <span>Recommended cutlery: Fish fork + fish knife</span>
+                <div class="menu-item menu-item-featured">
+                  <div class="menu-item-content">
+                    <div class="menu-name">SALMONE CON CRÈME FRAÎCHE, ERBA CIPOLLINA E CAVIALE</div>
+                    <p>
+                      “Salmon with crème fraîche, chives and caviar.”
+                    </p>
+                    <div class="menu-cutlery">
+                      <img src="fish-fork-knife.avif" alt="Fish fork and fish knife" />
+                      <span>Recommended cutlery: Fish fork + fish knife</span>
+                    </div>
                   </div>
+                  <img class="menu-dish-image" src="salmone-creme-fraiche.png" alt="Salmon with crème fraîche, chives and caviar" />
                 </div>
               </div>
             </div>
@@ -388,6 +557,6 @@
 
     </div>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>

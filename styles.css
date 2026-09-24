@@ -513,6 +513,10 @@ h1, h2, h3 {
   gap: 2rem;
 }
 
+#menu-section {
+  scroll-margin-top: 5rem;
+}
+
 .menu-category {
   padding: 2.2rem 2rem;
   border: 1px solid rgba(212, 171, 92, 0.22);
@@ -531,6 +535,28 @@ h1, h2, h3 {
 .menu-item {
   padding: 1.4rem 0;
   border-top: 1px solid rgba(212, 171, 92, 0.12);
+}
+
+.menu-item-featured {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 216px;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu-item-content {
+  min-width: 0;
+}
+
+.menu-dish-image {
+  width: 216px;
+  height: 260px;
+  border: 1px solid rgba(212, 171, 92, 0.28);
+  border-radius: 14px;
+  background: #eee8dc;
+  object-fit: contain;
+  object-position: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
 }
 
 .menu-item:first-of-type {
@@ -578,6 +604,79 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+.allergen-control {
+  margin-top: 0.9rem;
+}
+
+.allergen-button {
+  padding: 0.42rem 0.72rem;
+  border: 1px solid rgba(212, 171, 92, 0.42);
+  border-radius: 999px;
+  background: rgba(212, 171, 92, 0.08);
+  color: var(--primary);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.allergen-button:hover,
+.allergen-button:focus-visible {
+  background: rgba(212, 171, 92, 0.18);
+}
+
+.allergen-panel {
+  max-width: 420px;
+  margin-top: 0.7rem;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid var(--primary);
+  background: rgba(212, 171, 92, 0.07);
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.allergen-heading {
+  display: block;
+  color: var(--primary);
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.allergen-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.45rem 0;
+  padding-left: 1rem;
+}
+
+.allergen-list li strong,
+.allergen-list li span {
+  display: block;
+}
+
+.allergen-list li strong {
+  color: var(--text);
+}
+
+.allergen-list li span {
+  color: var(--muted);
+}
+
+.allergen-note {
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+.oyster-card .allergen-control,
+.seafood-card .allergen-control,
+.meat-card .allergen-control {
+  position: relative;
+  z-index: 2;
+}
+
 .menu-note {
   margin: 1.25rem 0 0;
   padding-top: 1.25rem;
@@ -588,9 +687,121 @@ h1, h2, h3 {
   font-style: italic;
 }
 
+@media (max-width: 640px) {
+  .menu-item-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-dish-image {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    order: -1;
+  }
+}
+
 .site-footer {
   padding: 1.5rem 1.25rem 2.5rem;
   text-align: center;
+}
+
+.service-list {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 900px;
+  margin: 2rem auto 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: service-step;
+}
+
+.service-list li {
+  display: grid;
+  grid-template-columns: 90px 2.3rem 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(212, 171, 92, 0.16);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--muted);
+}
+
+.service-list li img {
+  width: 90px;
+  height: 58px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-list li::before {
+  grid-column: 2;
+  counter-increment: service-step;
+  content: counter(service-step, decimal-leading-zero);
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.service-list li span {
+  grid-column: 3;
+}
+
+.service-guidelines {
+  display: grid;
+  gap: 1rem;
+  max-width: 980px;
+  margin: 2rem auto 0;
+}
+
+.service-step {
+  padding: 1.5rem;
+  border: 1px solid rgba(212, 171, 92, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.service-step h3 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.2rem;
+  letter-spacing: 0.03em;
+}
+
+.service-responsible,
+.service-note {
+  margin: 0.45rem 0 0;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.service-step ul {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.service-step li {
+  margin: 0.5rem 0;
+}
+
+.service-reference {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.service-reference p {
+  margin: 0.75rem 0;
+}
+
+.service-reference h4 {
+  margin: 1.25rem 0 0;
+  color: var(--primary);
+}
+
+.service-closing {
+  border-color: var(--primary);
 }
 
 .language-switcher {
@@ -639,6 +850,42 @@ h1, h2, h3 {
   border: 1px solid var(--line);
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.025);
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.meat-card:hover,
+.meat-card:focus-visible {
+  border-color: var(--primary);
+  box-shadow: 0 14px 34px rgba(10, 7, 7, 0.3);
+  outline: none;
+  transform: translateY(-4px);
+}
+
+.oyster-card.origin-card {
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.oyster-card.origin-card:hover,
+.oyster-card.origin-card:focus-visible {
+  border-color: var(--primary);
+  box-shadow: 0 14px 34px rgba(10, 7, 7, 0.3);
+  outline: none;
+  transform: translateY(-4px);
+}
+
+.seafood-card.origin-card {
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.seafood-card.origin-card:hover,
+.seafood-card.origin-card:focus-visible {
+  border-color: var(--primary);
+  box-shadow: 0 14px 34px rgba(10, 7, 7, 0.3);
+  outline: none;
+  transform: translateY(-4px);
 }
 
 .meat-card img {
@@ -675,6 +922,76 @@ h1, h2, h3 {
   font-size: 0.76rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.map-modal[hidden] {
+  display: none;
+}
+
+.map-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+}
+
+.map-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 4, 4, 0.82);
+  backdrop-filter: blur(6px);
+}
+
+.map-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 100%);
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--bg-soft);
+  box-shadow: var(--shadow);
+}
+
+.map-dialog h2 {
+  margin: 0.15rem 0 0;
+  color: var(--primary);
+}
+
+.map-location {
+  margin: 0.4rem 0 1rem;
+  color: var(--muted);
+}
+
+.map-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.map-close:hover,
+.map-close:focus-visible {
+  color: var(--primary);
+}
+
+.origin-map {
+  width: 100%;
+  height: min(52vh, 420px);
+  display: block;
+  border: 0;
+  border-radius: 14px;
+}
+
+body.map-open {
+  overflow: hidden;
 }
 
 .meat-note {
@@ -919,6 +1236,17 @@ h1, h2, h3 {
 }
 
 @media (max-width: 760px) {
+  .service-list li {
+    grid-template-columns: 72px 1.8rem 1fr;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  .service-list li img {
+    width: 72px;
+    height: 52px;
+  }
+
   .meat-grid {
     grid-template-columns: 1fr;
   }
